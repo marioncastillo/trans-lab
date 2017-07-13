@@ -1,1 +1,41 @@
 /* YeyeYeee código aquí */
+body{
+	background-color: #404040;
+}
+
+#trans{
+	color: #E8A511;
+
+}
+
+#logo{
+	width: 40%;
+	margin-top: 30%;
+}
+#email{
+	width: 250px;
+	height: 50px;
+}
+#clave{
+	width: 250px;
+	height: 50px;
+}
+
+#boton1{
+	background-color: #E8A511;
+	width: 250px;
+	height: 50px;
+	border-radius: 0px;
+}
+.amarillo{
+	color: #E8A511;
+}
+.blanco{
+	color:white;
+}
+#resitrate{
+	margin-top: 10%;
+}
+#olvido{
+	margin-top:3%;
+}
