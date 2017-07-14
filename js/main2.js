@@ -76,3 +76,27 @@ var tarjetas = $("#tarjetas").val();
         })
     });
 	})
+
+  //FUNCION PARA CALCULAR SALDO
+
+    $(document).ready(function(){
+	$("#saldo3").on("click", function(){
+		var ultimoSaldo = $("#tarjeta5").val();
+		var tarifa  =$("#imtarifa").val();
+    $.ajax({
+            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + ultimoSaldo, 
+            type: 'GET',
+            datatype: 'JSON',
+            
+        })
+
+        .done(function(response){
+        	$("#calculasaldo").append('<div id="saldito">'+ response.saldoTarjeta +'</div>')
+            console.log(response.saldoTarjeta-tarifa);
+        })
+
+        .fail(function(error){
+            console.log("error");
+        })
+    });
+	})
