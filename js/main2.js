@@ -1,3 +1,4 @@
+    $(document).ready(function(){
 //linkea
 
 	$("#home").click(function(e){
@@ -76,7 +77,7 @@ var tarjetas = $("#tarjetas").val();
         })
     });
 	})
-
+	});
   //FUNCION PARA CALCULAR SALDO
 
     $(document).ready(function(){
