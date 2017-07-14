@@ -1,16 +1,6 @@
-/*$(document).ready(function(){
-	$("#boton1").click(function(e){})
-	function correo(email){
-		var arroba = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-		return arroba.test(email);
-	}
-	var campo="";
 
-	if($("#email").val() == ""){
-		campo += "<br>Email";
-	}
-});*/
-/*
+$(document).ready(function(){
+	/*validar email y nombre*/
 	$("#boton1").click(function(e){
 
 		function isEmail(email) {
@@ -18,14 +8,24 @@
  		 return regex.test(email);
 		};
 
+		
 		if ($("#email").val() == "") {
 
-			alert("ingresa email");
-		} 
-		
-		if (isEmail($("#email").val()) == false ) {
-			alert("tu email no es valido")
+			alert("ingresa tu email")
 		}
 
+		if (isEmail($("#email").val()) == false ) {
+			e.preventDefault();
+			alert("tu email no es valido")
+		
+		}
+		if ($("#clave").val().length != 8) {
+			alert("tu clave debe ser de 8 digitos")
+		}
+
+		 else {
+			e.preventDefault();
+			window.location = "index2.html";
+		}
 	});
-})
+});
