@@ -83,7 +83,7 @@ li:hover{
 	margin-top: 100px;
 
 }
-#saldo{
+#saldo2{
 	background-color: #E8A511;
 	width: 200px;
 	height: 30px;
@@ -92,6 +92,8 @@ li:hover{
 	color: white;
 	font-size: 15px;
 }
+
+
 
 #tarjeta3{
 	width: 300px;
@@ -108,7 +110,7 @@ li:hover{
 	width: px;
 
 }
-#tarifa{
+#imtarifa{
 	width: 110px;
 }
 

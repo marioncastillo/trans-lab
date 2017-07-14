@@ -25,12 +25,27 @@ $(document).ready(function(){
 			e.preventDefault();
 			window.location = "index4.html";
 		});
+//saldo
+	$("#saldo").click(function(e){
+			e.preventDefault();
+			window.location = "index5.html";
+		});
 //link menu saldo
-
 	$("#saldomenu").click(function(e){
 			e.preventDefault();
 			window.location = "index5.html";
 		});
+
+//link  calculo
+	$("#tarifa").click(function(e){
+			e.preventDefault();
+			window.location = "index6.html";
+		})
+//link menu calculo
+	$("#menucalculo").click(function(e){
+			e.preventDefault();
+			window.location = "index6.html";
+		})
 
 //funcion para imprimir tarjetas
 	$("#agregar").click(function(e){
