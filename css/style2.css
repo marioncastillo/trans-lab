@@ -8,3 +8,10 @@ ul{
 li:hover{
 	background-color: #E8A511;
 }
+#trans{
+	color: white;
+}
+
+#textouno{
+	margin-top: 10px;
+}

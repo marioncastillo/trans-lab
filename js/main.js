@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-	/*validar email y nombre*/
+	/*validar email y clave*/
 	$("#boton1").click(function(e){
 
 		function isEmail(email) {
