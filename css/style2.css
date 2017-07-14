@@ -1,3 +1,10 @@
 .navbar-toggle {
 	float:left;
 }
+ul{
+	background-color: white;
+}
+
+li:hover{
+	background-color: #E8A511;
+}
