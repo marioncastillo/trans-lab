@@ -1,5 +1,4 @@
-
-$(document).ready(function(){
+//linkea
 
 	$("#home").click(function(e){
 			e.preventDefault();
@@ -48,6 +47,7 @@ $(document).ready(function(){
 		})
 
 //funcion para imprimir tarjetas
+var tarjetas = $("#tarjetas").val();
 	$("#agregar").click(function(e){
 		localStorage.tarjetas = $("#tarjetas").val();
 
@@ -55,28 +55,24 @@ $(document).ready(function(){
 	});
 
 //FUNCION PARA IMPRIMIR SALDO
-$("#saldo").click(function(e){
-		localStorage.tarjetas = $("#tarjeta2").val();
 
-	$("#guardatarjetas2").append('<p class="imprime">'+localStorage.tarjetas+'</p>');
-	});
+  $(document).ready(function(){
+	$("#saldo2").on("click", function(){
+		var saldoFinal = $("#tarjeta2").val();
+    $.ajax({
+            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + saldoFinal, 
+            type: 'GET',
+            datatype: 'JSON',
+            
+        })
 
-});
+        .done(function(response){
+        	$("#muestrasaldo").append("<div>"+ response.saldoTarjeta + "</div>")
+            console.log(response.saldoTarjeta);
+        })
 
-//CALCULAR SALDO
-
-$.ajax({
-	url: '/path/to/file',
-	type: 'default GET (Other values: POST)',
-	dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
-	data: {param1: 'value1'},
-})
-.done(function() {
-	console.log("success");
-})
-.fail(function() {
-	console.log("error");
-})
-.always(function() {
-	console.log("complete");
-});
+        .fail(function(error){
+            console.log("error");
+        })
+    });
+	})
