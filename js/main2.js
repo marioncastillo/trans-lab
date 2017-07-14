@@ -25,7 +25,12 @@ $(document).ready(function(){
 			e.preventDefault();
 			window.location = "index4.html";
 		});
+//link menu saldo
 
+	$("#saldomenu").click(function(e){
+			e.preventDefault();
+			window.location = "index5.html";
+		});
 
 //funcion para imprimir tarjetas
 	$("#agregar").click(function(e){
@@ -42,3 +47,5 @@ $("#saldo").click(function(e){
 	});
 
 });
+
+//CALCULAR SALDO
