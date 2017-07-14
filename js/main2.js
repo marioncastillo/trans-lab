@@ -34,4 +34,11 @@ $(document).ready(function(){
 	$("#guardatarjetas").append('<p class="imprime">'+localStorage.tarjetas+'</p>');
 	});
 
+//FUNCION PARA IMPRIMIR SALDO
+$("#saldo").click(function(e){
+		localStorage.tarjetas = $("#tarjeta2").val();
+
+	$("#guardatarjetas2").append('<p class="imprime">'+localStorage.tarjetas+'</p>');
+	});
+
 });
