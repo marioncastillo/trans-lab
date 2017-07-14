@@ -60,3 +60,19 @@ li:hover{
 	color: black;
 	margin-top: 10px;
 }
+
+.frecuente{
+	background-color:#E8A511;
+	padding: 60px; 
+	color: white;
+
+}
+
+#pre{
+	background-color: white;
+	width: 300px;
+	height: 40px;
+	color: black;
+	font-size: 15px;
+
+}
