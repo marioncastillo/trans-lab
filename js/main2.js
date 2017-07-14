@@ -58,16 +58,16 @@ var tarjetas = $("#tarjetas").val();
 
   $(document).ready(function(){
 	$("#saldo2").on("click", function(){
-		var saldoFinal = $("#tarjeta2").val();
+		var ultimoSaldo = $("#tarjeta2").val();
     $.ajax({
-            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + saldoFinal, 
+            url: 'http://bip-servicio.herokuapp.com/api/v1/solicitudes.json?bip=' + ultimoSaldo, 
             type: 'GET',
             datatype: 'JSON',
             
         })
 
         .done(function(response){
-        	$("#muestrasaldo").append("<div>"+ response.saldoTarjeta + "</div>")
+        	$("#muestrasaldo").append('<div id="saldito">'+ response.saldoTarjeta +'</div>')
             console.log(response.saldoTarjeta);
         })
 
